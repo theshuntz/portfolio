@@ -15,13 +15,10 @@ hr {
     margin: 2rem 0rem;
 }
 
-/** spaces **/
-
 .margin-md {
     margin: 2rem;
 }
 
-/** container **/
 .container {
     padding: 0rem 1rem;
 }
@@ -31,7 +28,6 @@ hr {
     margin: auto;
 }
 
-/** links **/
 .link {
     box-sizing: border-box;
     text-decoration: none;
@@ -56,9 +52,16 @@ hr {
     margin: 1rem 1rem 1rem 0rem;
 }
 
-/** look into BEM naming convention for CSS **/
 
-/** lists **/
+.home-button:hover{
+    transform: translateY(-4px) translateX(2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0,0.05);
+}
+
+.home-button{
+    transition: all .2s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
 
 .list-non-bullet {
     list-style: none;
@@ -75,21 +78,27 @@ hr {
 .navigation {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
-    border-bottom-left-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    
 }
 
 .navigation .nav-brand {
-    font-weight: bold;
+    font-weight: 500;
+    padding:  0 30px;
+    
 }
 
 .nav-brand a {
     text-decoration: none;
     color: inherit;
+    
 }
 
 .navigation .nav-pills {
-    text-align: right;
+   
 }
 
 .navigation .link {
@@ -97,8 +106,21 @@ hr {
 }
 
 .navigation .link-active {
-    font-weight: bold;
+    
 }
+
+.nav-button:hover{
+    transform: translateX(3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0,0.15);
+    border-radius: 10px;
+}
+
+.nav-button{
+    transition: all .1s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0,0.00);
+    text-transform: capitalize;
+}
+
 
 /** header **/
 
@@ -155,7 +177,6 @@ hr {
 }
 
 .footer .footer-header {
-    font-weight: bold;
     font-size: large;
 }
 
@@ -163,12 +184,27 @@ hr {
     padding-inline-start: 0px;
 }
 
-/** projects **/
+
+.footer-btn:hover{
+    transform: translateY(-5px);
+    background-color: white;
+}
+
+.footer-btn:hover a{
+    color: #1abc9c;
+    transition: all .2s;
+}
+
+.footer-btn{
+    transform: translateY(0px);
+    transition: all .2s;
+}
+
 .showcase-list {
     padding: 2rem;
 }
 
-/** blogs **/
 .showcase-blog {
     padding-bottom: 6rem;
 }
+

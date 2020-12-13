@@ -10,16 +10,16 @@
 
 <body>
     <nav class="navigation container">
-        <div class="nav-brand"><a href="/">Masoom Kumar</a></div>
+        <div class="nav-brand gsap"><a href="/">Masoom Kumar</a></div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
-                <a class="link" href="/">home</a>
+                <a class="link nav-button" href="/">home</a>
             </li>
             <li class="list-item-inline">
-                <a class="link link-active" href="/projects.html">projects</a>
+                <a class="link link-active nav-button" href="/projects.html">projects</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/blogs.html">blogs</a>
+                <a class="link nav-button" href="/blogs.html">blogs</a>
             </li>
         </ul>
     </nav>
@@ -37,8 +37,8 @@
                 <p>Do you read books? You would find some good recommendations for all the genre. Made using ReactJS
                     with love</p>
 
-                <a class="link link-primary" href="">Live Project</a>
-                <a class="link link-secondary" href="">View Source</a>
+                <a class="link link-primary nav-button" href="">Live Project</a>
+                <a class="link link-secondary nav-button" href="">View Source</a>
 
             </article>
 
@@ -51,8 +51,8 @@
                 <p>I struggle with understanding the emojis. Do you too? If yes, then see this library of emojis with
                     meaning</p>
 
-                <a class="link link-primary" href="">Live Project</a>
-                <a class="link link-secondary" href="">View
+                <a class="link link-primary nav-button" href="">Live Project</a>
+                <a class="link link-secondary nav-button" href="">View
                     Source</a>
 
             </article>
@@ -65,8 +65,8 @@
                 <small>November, 2020</small>
                 <p>Convert from British English to American English. Even though it's English, it's different.</p>
 
-                <a class="link link-primary" href="">Live Project</a>
-                <a class="link link-secondary" href="">View Source</a>
+                <a class="link link-primary nav-button" href="">Live Project</a>
+                <a class="link link-secondary nav-button" href="">View Source</a>
 
             </article>
 
@@ -79,9 +79,9 @@
                 <p>Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the
                     translator to convert your text from English to Minion speak or Banana language.</p>
 
-                <a class="link link-primary" href="">Live
+                <a class="link link-primary nav-button" href="">Live
                     Project</a>
-                <a class="link link-secondary" href="">View Source</a>
+                <a class="link link-secondary nav-button" href="">View Source</a>
 
             </article>
 
@@ -93,8 +93,8 @@
                 <small>November, 2020</small>
                 <p>A CLI app built with <strong>nodeJS</strong>.</p>
 
-                <a class="link link-primary" href="">Live Project</a>
-                <a class="link link-secondary" href="">View
+                <a class="link link-primary nav-button" href="">Live Project</a>
+                <a class="link link-secondary nav-button" href="">View
                     Source</a>
             </article>
 
@@ -106,9 +106,9 @@
                 <small>November, 2020</small>
                 <p>Everyone drinks water, let's see if you know it.</p>
 
-                <a class="link link-primary" href="">Live
+                <a class="link link-primary nav-button" href="">Live
                     Project</a>
-                <a class="link link-secondary" href="">View
+                <a class="link link-secondary nav-button" href="">View
                     Source</a>
 
             </article>
@@ -120,24 +120,40 @@
     <footer class="footer">
         <div class="footer-header">social media handles</div>
         <ul class="social-links list-non-bullet">
-            <li class="list-item-inline">
+            <li class="list-item-inline footer-btn">
                 <a class="link" href="https://github.com/theshuntz">
-                    github
+                    Github
                 </a>
             </li>
-            <li class="list-item-inline">
+            <li class="list-item-inline footer-btn">
                 <a class="link" href="https://twitter.com/shuntzhere">
-                    twitter
+                    Twitter
                 </a>
             </li>
-            <li class="list-item-inline">
+            <li class="list-item-inline footer-btn">
                 <a class="link" href="https://www.linkedin.com/in/masoom-kumar/">
-                    linkedin
+                    LinkedIn
                 </a>
             </li>
 
         </ul>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>gsap.fromTo(".gsap", {
+            opacity: 0,
+            duration: 0.2,
+            y: -50,
+            ease: "Expo.easeOut",
+        },
+            {
+                opacity: 1,
+                duration: 0.2,
+                y: 0,
+                ease: "Expo.easeIn",
+                stagger: {
+                    amount: 0.4
+                },
+            })</script>
 
 </body>
 
