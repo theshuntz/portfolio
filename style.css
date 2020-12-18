@@ -176,14 +176,8 @@ hr {
     padding-inline-start: 0px;
 }
 
-
-.footer-btn:hover{
-    transform: translateY(-5px);
-    background-color: white;
-}
-
 .footer-btn:hover a{
-    color: #1abc9c;
+    color: black;
     transition: all .2s;
 }
 
