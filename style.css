@@ -115,7 +115,6 @@ hr {
 }
 
 
-/** header **/
 
 .hero {
     padding: 2rem;
@@ -128,6 +127,7 @@ hr {
     display: block;
     margin: auto;
 }
+
 
 .hero .hero-heading {
     text-align: center;
